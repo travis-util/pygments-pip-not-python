@@ -32,6 +32,15 @@ before_script:
 - elinks -config-dump
 
 script:
+- echo Short list
+- pygmentize -P style=vim -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=native -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=manni -f 256 example.yaml # YAML file
+- pygmentize -P style=perldoc -f 16m example.yaml # YAML file
+- pygmentize -P style=rainbow_dash -f 256 example.yaml # YAML file
+
+- echo Comprenhensive list
 - pygmentize -P linenos=1 -P bg=dark example.yaml # YAML file
 - pygmentize -P linenos=1 example.yaml # YAML file
 - pygmentize -P linenos=1 -f html -O full example.yaml | elinks -force-html -dump-color-mode 0 -dump
