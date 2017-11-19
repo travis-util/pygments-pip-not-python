@@ -1,0 +1,6 @@
+%YAML 1.2
+---
+language: python
+# addons:
+install: # Pygments
+- pip install pygments
