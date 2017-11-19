@@ -17,19 +17,15 @@ before_install:
 - which pip3
 - env
 - printenv TERM
-- elinks -config-dump
 
 install:
 - pip install --user pygments # --user is required for language: <not> python to use python 2 (python 3 seems unsupported)
 - mkdir ~/.elinks
-# - echo set document.colors.background = \"black\" > ~/.elinks/elinks.conf
 
 before_script:
 - which pygmentize
 - pygmentize -h
 - pygmentize -L style
-- cat ~/.elinks/elinks.conf || true
-- elinks -config-dump
 
 script:
 - echo Short list
