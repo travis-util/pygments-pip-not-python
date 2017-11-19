@@ -32,8 +32,10 @@ before_script:
 
 script:
 - pygmentize -P bg=dark -P linenos=1 example.yaml # YAML file
+- pygmentize -P bg=dark -P linenos=1 -f 16m example.yaml # YAML file
 # - pygmentize -P bg=dark -P linenos=1 -f html example.yaml | elinks -force-html -dump-color-mode 4 -dump
 - pygmentize -P linenos=1 example.yaml # YAML file
+- pygmentize -P linenos=1 -f 16m example.yaml # YAML file
 # - pygmentize -P linenos=1 -f html example.yaml | elinks -force-html -dump-color-mode 4 -dump
 # styles for Pygments 2.2.0
 - pygmentize -P style=manni -P bg=dark -P linenos=1 example.yaml # YAML file
