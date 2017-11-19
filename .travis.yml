@@ -40,6 +40,7 @@ script:
 # styles for Pygments 2.2.0
 - pygmentize -P style=manni -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=manni -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=manni -f 16m  example.yaml # YAML file
 - pygmentize -P style=igor -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=igor -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=lovelace -P bg=dark -P linenos=1 example.yaml # YAML file
