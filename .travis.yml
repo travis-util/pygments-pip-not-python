@@ -16,7 +16,7 @@ before_install:
 - which pip3
 install:
 - pip install --user pygments # --user is required for language: <not> python to use python 2 (python 3 seems unsupported)
-- echo document.colors.background black > ~/elinks.conf
+- echo set document.colors.background = black > ~/elinks.conf
 before_script:
 - which pygmentize
 - pygmentize -h
