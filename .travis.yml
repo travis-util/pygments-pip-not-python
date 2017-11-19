@@ -37,66 +37,123 @@ script:
 - pygmentize -P linenos=1 example.yaml # YAML file
 - pygmentize -P linenos=1 -f 16m example.yaml # YAML file
 # - pygmentize -P linenos=1 -f html example.yaml | elinks -force-html -dump-color-mode 4 -dump
+
 # styles for Pygments 2.2.0
 - pygmentize -P style=manni -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=manni -P linenos=1 example.yaml # YAML file
-- pygmentize -P style=manni -f 16m  example.yaml # YAML file
+- pygmentize -P style=manni -f 16m example.yaml # YAML file
+
 - pygmentize -P style=igor -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=igor -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=igor -f 16m example.yaml # YAML file
+
 - pygmentize -P style=lovelace -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=lovelace -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=lovelace -f 16m example.yaml # YAML file
+
 - pygmentize -P style=xcode -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=xcode -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=xcode -f 16m example.yaml # YAML file
+
 - pygmentize -P style=vim -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=vim -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=vim -f 16m example.yaml # YAML file
+
 - pygmentize -P style=autumn -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=autumn -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=autumn -f 16m example.yaml # YAML file
+
 - pygmentize -P style=abap -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=abap -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=abap -f 16m example.yaml # YAML file
+
 - pygmentize -P style=vs -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=vs -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=vs -f 16m example.yaml # YAML file
+
 - pygmentize -P style=rrt -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=rrt -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=rrt -f 16m example.yaml # YAML file
+
 - pygmentize -P style=native -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=native -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=native -f 16m example.yaml # YAML file
+
 - pygmentize -P style=perldoc -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=perldoc -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=perldoc -f 16m example.yaml # YAML file
+
 - pygmentize -P style=borland -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=borland -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=borland -f 16m example.yaml # YAML file
+
 - pygmentize -P style=arduino -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=arduino -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=arduino -f 16m example.yaml # YAML file
+
 - pygmentize -P style=tango -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=tango -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=tango -f 16m example.yaml # YAML file
+
 - pygmentize -P style=emacs -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=emacs -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=emacs -f 16m example.yaml # YAML file
+
 - pygmentize -P style=friendly -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=friendly -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=friendly -f 16m example.yaml # YAML file
+
 - pygmentize -P style=monokai -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=monokai -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=monokai -f 16m example.yaml # YAML file
+
 - pygmentize -P style=paraiso-dark -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=paraiso-dark -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=paraiso-dark -f 16m example.yaml # YAML file
+
 - pygmentize -P style=colorful -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=colorful -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=colorful -f 16m example.yaml # YAML file
+
 - pygmentize -P style=murphy -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=murphy -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=murphy -f 16m example.yaml # YAML file
+
 - pygmentize -P style=bw -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=bw -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=bw -f 16m example.yaml # YAML file
+
 - pygmentize -P style=pastie -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=pastie -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=pastie -f 16m example.yaml # YAML file
+
 - pygmentize -P style=rainbow_dash -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=rainbow_dash -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=rainbow_dash -f 16m example.yaml # YAML file
+
 - pygmentize -P style=algol_nu -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=algol_nu -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=algol_nu -f 16m example.yaml # YAML file
+
 - pygmentize -P style=paraiso-light -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=paraiso-light -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=paraiso-light -f 16m example.yaml # YAML file
+
 - pygmentize -P style=trac -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=trac -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=trac -f 16m example.yaml # YAML file
+
 - pygmentize -P style=default -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=default -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=default -f 16m example.yaml # YAML file
+
 - pygmentize -P style=algol -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=algol -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=algol -f 16m example.yaml # YAML file
+
 - pygmentize -P style=fruity -P bg=dark -P linenos=1 example.yaml # YAML file
 - pygmentize -P style=fruity -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=fruity -f 16m example.yaml # YAML file
 
 # - pygmentize -f terminal example.yaml # YAML file
 # - pygmentize -f terminal256 example.yaml # YAML file
