@@ -92,4 +92,4 @@ script:
 
 - pygmentize ~/virtualenv/python2.7/bin/activate_this.py # Python file
 # - pygmentize -f html ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 4 -dump
-- pygmentize -f html ~/virtualenv/python2.7/bin/activate_this.py
+- pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py
