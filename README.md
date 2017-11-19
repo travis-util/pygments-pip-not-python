@@ -9,6 +9,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
   * background = **black**, beige comments, violet separator
     * **256**
     * html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+  * :-( http://pygments.org/demo/6661078/?style=manni
 * lovelace -f html -O full -P linenos=1 example.yaml | elinks -force-html  -dump -dump-color-mode
   * background = white
     * 1
@@ -22,6 +23,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
     * 1
     * 2
     * 4
+  * :-) http://pygments.org/demo/6661078/?style=vim
 * autumn -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = white
     * 1
@@ -38,10 +40,12 @@ Usable (yaml comment are different and visible) styles for Travis console:
   * background = **black**, green comments
     * 1
     * 4
+  * http://pygments.org/demo/6661078/?style=rrt
 * **native** -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = **black**, turquoise comments, blue separator, green %, turquoise numbers, nice output
     * 1
     * 4
+  * http://pygments.org/demo/6661078/?style=native
 * **perldoc**
   * **16m**
     * background = **black**, blue comments
@@ -49,6 +53,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
     * background = white
       * 1
       * 4
+  * http://pygments.org/demo/6661078/?style=perldoc
 * tango -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = white
     * 1
@@ -74,6 +79,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
     * background = white
       * 1
       * 4
+  * http://pygments.org/demo/6661078/?style=rainbow_dash
 * algol_nu -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = white
     * 1
@@ -90,6 +96,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
   * background = **black**, beige comments, turquoise nubers, red %, nice
     * 1
     * 4
+  * http://pygments.org/demo/6661078/?style=fruity
 
 ## References
 * http://pygments.org/docs/formatters/
