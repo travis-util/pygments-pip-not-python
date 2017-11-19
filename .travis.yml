@@ -5,6 +5,7 @@ addons:
   apt:
     packages:
     - elinks # Needs pygmentize -f html -O full
+
 before_install:
 - ls --color -a
 - ls --color -a ~
@@ -14,13 +15,19 @@ before_install:
 - which pip
 - which pip2
 - which pip3
+- elinks -config-dump
+
 install:
 - pip install --user pygments # --user is required for language: <not> python to use python 2 (python 3 seems unsupported)
-- echo set document.colors.background = black > ~/elinks.conf
+- mkdir ~/.elinks
+- echo set document.colors.background = black > ~/.elinks/elinks.conf
+
 before_script:
 - which pygmentize
 - pygmentize -h
 - pygmentize -L style
+- elinks -config-dump
+
 script:
 - pygmentize -P bg=dark -P linenos=1 example.yaml # YAML file
 # - pygmentize -P bg=dark -P linenos=1 -f html example.yaml | elinks -force-html -dump-color-mode 4 -dump
