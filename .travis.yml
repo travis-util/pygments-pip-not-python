@@ -4,7 +4,7 @@
 addons:
   apt:
     packages:
-    - elinks # does not display colors from Pygments
+    - elinks # Needs pygmentize -f html -O full
 before_install:
 - ls --color -a
 - ls --color -a ~
@@ -91,6 +91,6 @@ script:
 # - pygmentize -l YAML -f html -P style=colorful -P bg=dark -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize ~/virtualenv/python2.7/bin/activate_this.py # Python file
-- pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 4 -dump
-- pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | pygmentize -l html -f html -O full | elinks -force-html -dump-color-mode 4 -dump
+- pygmentize -P bg=dark -P linenos=1 -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 4 -dump
+- pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | pygmentize -l html -P bg=dark -P linenos=1 -f html -O full | elinks -force-html -dump-color-mode 4 -dump
 - pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py
