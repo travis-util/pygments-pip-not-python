@@ -43,119 +43,206 @@ script:
 # styles for Pygments 2.2.0
 - pygmentize -P style=manni -f 256 example.yaml # YAML file
 - pygmentize -P style=manni -f 16m example.yaml # YAML file
-- pygmentize -P style=manni -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=manni -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=manni -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=manni -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=manni -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=igor -f 256 example.yaml # YAML file
 - pygmentize -P style=igor -f 16m example.yaml # YAML file
-- pygmentize -P style=igor -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=igor -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=igor -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=igor -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=igor -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=lovelace -f 256 example.yaml # YAML file
 - pygmentize -P style=lovelace -f 16m example.yaml # YAML file
-- pygmentize -P style=lovelace -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=lovelace -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=lovelace -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=lovelace -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=lovelace -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=xcode -f 256 example.yaml # YAML file
 - pygmentize -P style=xcode -f 16m example.yaml # YAML file
-- pygmentize -P style=xcode -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=xcode -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=xcode -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=xcode -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=xcode -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=vim -f 256 example.yaml # YAML file
 - pygmentize -P style=vim -f 16m example.yaml # YAML file
-- pygmentize -P style=vim -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=vim -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=vim -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=vim -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=vim -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=autumn -f 256 example.yaml # YAML file
 - pygmentize -P style=autumn -f 16m example.yaml # YAML file
-- pygmentize -P style=autumn -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=autumn -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=autumn -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=autumn -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=autumn -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=abap -f 256 example.yaml # YAML file
 - pygmentize -P style=abap -f 16m example.yaml # YAML file
-- pygmentize -P style=abap -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=abap -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=abap -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=abap -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=abap -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=vs -f 256 example.yaml # YAML file
 - pygmentize -P style=vs -f 16m example.yaml # YAML file
-- pygmentize -P style=vs -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=vs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=vs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=vs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=vs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=rrt -f 256 example.yaml # YAML file
 - pygmentize -P style=rrt -f 16m example.yaml # YAML file
-- pygmentize -P style=rrt -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=rrt -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=rrt -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=rrt -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=rrt -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=native -f 256 example.yaml # YAML file
 - pygmentize -P style=native -f 16m example.yaml # YAML file
-- pygmentize -P style=native -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=native -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=native -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=native -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=native -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=perldoc -f 256 example.yaml # YAML file
 - pygmentize -P style=perldoc -f 16m example.yaml # YAML file
-- pygmentize -P style=perldoc -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=perldoc -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=perldoc -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=perldoc -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=perldoc -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=borland -f 256 example.yaml # YAML file
 - pygmentize -P style=borland -f 16m example.yaml # YAML file
-- pygmentize -P style=borland -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=borland -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=borland -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=borland -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=borland -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=arduino -f 256 example.yaml # YAML file
 - pygmentize -P style=arduino -f 16m example.yaml # YAML file
-- pygmentize -P style=arduino -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=arduino -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=arduino -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=arduino -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=arduino -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=tango -f 256 example.yaml # YAML file
 - pygmentize -P style=tango -f 16m example.yaml # YAML file
-- pygmentize -P style=tango -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=tango -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=tango -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=tango -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=tango -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=emacs -f 256 example.yaml # YAML file
 - pygmentize -P style=emacs -f 16m example.yaml # YAML file
-- pygmentize -P style=emacs -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=emacs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=emacs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=emacs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=emacs -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=friendly -f 256 example.yaml # YAML file
 - pygmentize -P style=friendly -f 16m example.yaml # YAML file
-- pygmentize -P style=friendly -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=friendly -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=friendly -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=friendly -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=friendly -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=monokai -f 256 example.yaml # YAML file
 - pygmentize -P style=monokai -f 16m example.yaml # YAML file
-- pygmentize -P style=monokai -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=monokai -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=monokai -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=monokai -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=monokai -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=paraiso-dark -f 256 example.yaml # YAML file
 - pygmentize -P style=paraiso-dark -f 16m example.yaml # YAML file
-- pygmentize -P style=paraiso-dark -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=paraiso-dark -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=paraiso-dark -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=paraiso-dark -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=paraiso-dark -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=colorful -f 256 example.yaml # YAML file
 - pygmentize -P style=colorful -f 16m example.yaml # YAML file
-- pygmentize -P style=colorful -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=colorful -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=colorful -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=colorful -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=colorful -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=murphy -f 256 example.yaml # YAML file
 - pygmentize -P style=murphy -f 16m example.yaml # YAML file
-- pygmentize -P style=murphy -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=murphy -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=murphy -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=murphy -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=murphy -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=bw -f 256 example.yaml # YAML file
 - pygmentize -P style=bw -f 16m example.yaml # YAML file
-- pygmentize -P style=bw -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=bw -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=bw -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=bw -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=bw -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=pastie -f 256 example.yaml # YAML file
 - pygmentize -P style=pastie -f 16m example.yaml # YAML file
-- pygmentize -P style=pastie -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=pastie -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=pastie -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=pastie -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=pastie -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=rainbow_dash -f 256 example.yaml # YAML file
 - pygmentize -P style=rainbow_dash -f 16m example.yaml # YAML file
-- pygmentize -P style=rainbow_dash -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=rainbow_dash -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=rainbow_dash -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=rainbow_dash -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=rainbow_dash -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=algol_nu -f 256 example.yaml # YAML file
 - pygmentize -P style=algol_nu -f 16m example.yaml # YAML file
-- pygmentize -P style=algol_nu -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=algol_nu -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=algol_nu -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=algol_nu -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=algol_nu -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=paraiso-light -f 256 example.yaml # YAML file
 - pygmentize -P style=paraiso-light -f 16m example.yaml # YAML file
-- pygmentize -P style=paraiso-light -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=paraiso-light -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=paraiso-light -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=paraiso-light -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=paraiso-light -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=trac -f 256 example.yaml # YAML file
 - pygmentize -P style=trac -f 16m example.yaml # YAML file
-- pygmentize -P style=trac -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=trac -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=trac -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=trac -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=trac -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=default -f 256 example.yaml # YAML file
 - pygmentize -P style=default -f 16m example.yaml # YAML file
-- pygmentize -P style=default -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=default -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=default -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=default -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=default -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=algol -f 256 example.yaml # YAML file
 - pygmentize -P style=algol -f 16m example.yaml # YAML file
-- pygmentize -P style=algol -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=algol -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=algol -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=algol -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=algol -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 - pygmentize -P style=fruity -f 256 example.yaml # YAML file
 - pygmentize -P style=fruity -f 16m example.yaml # YAML file
-- pygmentize -P style=fruity -P linenos=1 example.yaml # YAML file
+- pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 2 -dump
+- pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
+- pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
 # - pygmentize -f terminal example.yaml # YAML file
 # - pygmentize -f terminal256 example.yaml # YAML file
