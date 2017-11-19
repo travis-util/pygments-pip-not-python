@@ -5,9 +5,9 @@ Shows usage of Pygments in Travis with language different from python and bad re
 
 ## YAML
 Usable (yaml comment are different and visible) styles for Travis console:
-* manni
+* **manni**
   * background = **black**, beige comments, violet separator
-    * 256
+    * **256**
     * html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
 * lovelace -f html -O full -P linenos=1 example.yaml | elinks -force-html  -dump -dump-color-mode
   * background = white
@@ -17,7 +17,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
   * background = white
     * 1
     * 4
-* vim -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
+* **vim** -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = **black**, blue (or understriked) comments, violet numbers
     * 1
     * 2
@@ -38,12 +38,12 @@ Usable (yaml comment are different and visible) styles for Travis console:
   * background = **black**, green comments
     * 1
     * 4
-* native -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
+* **native** -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = **black**, turquoise comments, blue separator, green %, turquoise numbers, nice output
     * 1
     * 4
-* perldoc
-  * 16m
+* **perldoc**
+  * **16m**
     * background = **black**, blue comments
   * html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
     * background = white
@@ -86,7 +86,7 @@ Usable (yaml comment are different and visible) styles for Travis console:
   * background = white
     * 1
     * 4
-* fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
+* **fruity** -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = **black**, beige comments, turquoise nubers, red %, nice
     * 1
     * 4
