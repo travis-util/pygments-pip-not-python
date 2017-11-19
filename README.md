@@ -67,12 +67,13 @@ Usable (yaml comment are different and visible) styles for Travis console:
     * 4
 * rainbow_dash
   * 256
+    * background = **black**, beige comments
   * html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
-  * background = black
-    * 3
-  * background = white
-    * 1
-    * 4
+    * background = **black**, beige comments
+      * 3
+    * background = white
+      * 1
+      * 4
 * algol_nu -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump -dump-color-mode
   * background = white
     * 1
