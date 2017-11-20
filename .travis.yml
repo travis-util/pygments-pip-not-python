@@ -251,9 +251,9 @@ script:
 
 # Python file
 - pygmentize -P linenos=1 ~/virtualenv/python2.7/bin/activate_this.py
-- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 1 -dump
-- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 4 -dump
-- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color w3m -T text/html -dump # No color with w3m!
+- pygmentize -P linenos=1 -f html -O full -P style=vim ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -S vim -P linenos=1 -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 4 -dump
+- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | w3m -T text/html -dump # No color with w3m!
 
 # HTML file
 - pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | pygmentize -l html -P linenos=1 -f html -O full -S vim | elinks -force-html -dump -dump-color-mode 1
