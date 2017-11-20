@@ -252,7 +252,6 @@ script:
 # Python file
 - pygmentize -P linenos=1 ~/virtualenv/python2.7/bin/activate_this.py
 - pygmentize -P linenos=1 -f html -O full -P style=vim ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 1 -dump
-- pygmentize -P linenos=1 -f html -O full -P style=vim ~/virtualenv/python2.7/bin/activate_this.py | elinks -force-html -dump-color-mode 4 -dump
 - pygmentize -P linenos=1 -f html -O full -P style=vim ~/virtualenv/python2.7/bin/activate_this.py | w3m -T text/html -dump # No color with w3m!
 
 # HTML file
