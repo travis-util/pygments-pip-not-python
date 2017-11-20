@@ -3,6 +3,8 @@ Shows usage of Pygments in Travis with language different from python and bad re
 
 [![Build Status](https://travis-ci.org/travis-util/pygments-pip-not-python.svg?branch=master)](https://travis-ci.org/travis-util/pygments-pip-not-python)
 
+See also https://github.com/travis-util/pygments-python-pip
+
 ## YAML
 Usable (yaml comment are different and visible) styles for Travis console:
 * **manni**
