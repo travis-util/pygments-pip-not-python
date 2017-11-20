@@ -249,16 +249,12 @@ script:
 - pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 3 -dump
 - pygmentize -P style=fruity -f html -O full -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
 
-# - pygmentize -f terminal example.yaml # YAML file
-# - pygmentize -f terminal256 example.yaml # YAML file
-# - pygmentize -f html example.yaml | elinks -force-html -dump-color-mode 4 -dump
-# - pygmentize -l YAML -f html -P style=colorful -P bg=dark -P linenos=1 example.yaml | elinks -force-html -dump-color-mode 4 -dump
+# Python file
+- pygmentize -P linenos=1 ~/virtualenv/python2.7/bin/activate_this.py
+- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 1 -dump
+- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 4 -dump
+- pygmentize -P linenos=1 -f html -O full -S vim ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color w3m -T text/html -dump # No color with w3m!
 
-- pygmentize ~/virtualenv/python2.7/bin/activate_this.py # Python file
-- pygmentize -P linenos=1             -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 4 -dump
-- pygmentize -P bg=light -P linenos=1 -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 4 -dump
-- pygmentize -P bg=dark -P linenos=1  -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 4 -dump
-- pygmentize -P bg=dark -P linenos=1  -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color elinks -force-html -dump-color-mode 1 -dump
-- pygmentize -P bg=dark -P linenos=1  -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | env TERM=xterm-color w3m -T text/html -dump
-- pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | pygmentize -l html -P bg=dark -P linenos=1 -f html -O full | env TERM=xterm-color elinks -force-html -dump-color-mode 4 -dump
+# HTML file
+- pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py | pygmentize -l html -P linenos=1 -f html -O full -S vim | elinks -force-html -dump -dump-color-mode 1
 - pygmentize -f html -O full ~/virtualenv/python2.7/bin/activate_this.py
