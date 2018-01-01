@@ -19,7 +19,7 @@ before_install:
 - printenv TERM
 
 install:
-- pip install --user pygments # --user is required for language: <not> python to use python 2 (python 3 seems unsupported)
+- pip install --user --verbose --verbose --verbose pygments # --user is required for language: <not> python to use python 2 (python 3 seems unsupported)
 - mkdir ~/.elinks
 
 before_script:
