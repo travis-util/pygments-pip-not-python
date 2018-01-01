@@ -12,6 +12,8 @@ before_install:
 - ls --color ~/virtualenv
 - ls --color ~/virtualenv/python2.7
 - ls --color ~/virtualenv/python2.7/bin
+- python --version
+- python3 --version
 - which pip
 - which pip2
 - which pip3
