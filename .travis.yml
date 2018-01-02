@@ -32,11 +32,12 @@ before_install:
 - which pip3.6
 
 install:
-- pip install --user --verbose --verbose --verbose pygments
+- pip install --user pygments
 # --user is required for language: <not> python to use python 2 (python 3 seems unsupported)
 - mkdir ~/.elinks
 # - pip3 install --user --verbose --verbose --verbose pygments # pyenv: pip3: command not found
-- pip3.6 install --user --verbose --verbose --verbose pygments # pyenv: pip3: command not found
+# - pip3.6 install --user --verbose --verbose --verbose pygments # pyenv: pip3.6: command not found
+- ~/virtualenv/python3.6/bin/pip install pygments
 
 before_script:
 - which pygmentize
